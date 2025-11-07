@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Header Section -->
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center text-white">
+      <h1 class="display-4 fw-bolder">About Us</h1>
+      <p class="lead fw-normal text-white-50 mb-0">Learn more about who we are and what we do</p>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section class="py-5">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 align-items-center">
+      <div class="col-md-6">
+        <img class="img-fluid rounded mb-4 mb-lg-0 shadow"
+             src="{% static 'assets/about-image.jpeg' %}"
+             alt="About TK HUB" />
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bolder">Welcome to TK HUB</h2>
+        <p class="lead text-muted">
+          TK HUB is your one-stop online store for all things fashion, fitness, and lifestyle.
+          We provide a curated selection of high-quality products to help you live with confidence and style.
+        </p>
+        <p>
+          Founded in 2025, our mission is to make online shopping simple, trustworthy, and enjoyable.
+          Whether you’re looking for trendy apparel, top-notch gym equipment, or daily essentials —
+          TK HUB has something for everyone.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Section -->
+<section class="py-5 bg-light">
+  <div class="container px-4 px-lg-5 text-center">
+    <h2 class="fw-bolder mb-4">Our Mission</h2>
+    <p class="lead text-muted">
+      To create an online shopping experience that values quality, reliability, and customer satisfaction.
+      We aim to connect people with products that make their lives better every day.
+    </p>
+  </div>
+</section>
+{% endblock %}
